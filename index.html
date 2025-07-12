@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contact-container">
+    <form id="contactForm" class="contact-form">
+      <div class="left-panel">
+        <h2>Contact us</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+      </div>
+
+      <div class="right-panel">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write text here..." required></textarea>
+
+        <button type="submit">SEND MESSAGE</button>
+        <div id="thankYouMsg" class="thank-you hidden">✅ Thank you for your message!</div>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
